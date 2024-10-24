@@ -12,6 +12,7 @@ Download the original Instruct_QA dataset: https://github.com/McGill-NLP/instruc
 Configure the yaml file. There are two parameters in config.yaml: 
 
 -- instruct_qa_path : the path where you saved the instruct_qa folder
+
 -- output_path: the path where the corrected dataset will be saved 
 
 ## Step 3 
