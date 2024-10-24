@@ -5,11 +5,9 @@ import re
 import argparse
 
 
-# creating the dataframe 
-
-
-parser = argparse.ArgumentParser(description="A script to demonstrate named arguments")
+parser = argparse.ArgumentParser(description="")
 parser.add_argument("--dataset_path", type=str, help="The path to InstructQA")
+parser.add_argument("--output_path", type=str, help="The path to the output file")
 args = parser.parse_args()
 
 
@@ -78,9 +76,10 @@ for dataset in datasets:
 
 df = pd.DataFrame(data_collector)
 
-print("Dataset contenct: ")
-print(df['dataset'].value_counts())
-
+# print("Dataset content: ")
+# print(df['dataset'].value_counts())
 
 df['answer'] = df['answer'].fillna('No answer')
-df.to_csv('instruct_qa_full.csv',index=False)
+
+
+df.to_csv(os.path.join(args.output_path,'instruct_qa_full.csv'),index=False)

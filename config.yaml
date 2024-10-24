@@ -1,0 +1,4 @@
+paths: 
+  instruct_qa_path: "instruct_qa" # the path where you downloaded InstructQA
+  output_path: "extracted_dataset"  #the path where you want the dataset file to be saved
+
