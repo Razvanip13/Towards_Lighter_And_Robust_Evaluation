@@ -23,9 +23,20 @@ Run the script:
 python3 create_dataset.py 
 ```
 
+- collect_answer.py: combines the data from Instruct_QA into a single csv file
+- apply_corrections.py: applies the corrections and returns a csv with the samples of NaturalQuestions
+
+
 The output will contain two files: 
 
 - instruct_qa_full.csv: the original InstructQA dataset inside a csv file 
 - corrected_dataset_natural_questions.csv: the corrected subsampled of NaturalQuestions that was used in the paper 
 
 
+### Requirements
+
+```
+numpy==2.1.2
+pandas==2.2.3
+PyYAML==6.0.2
+```
