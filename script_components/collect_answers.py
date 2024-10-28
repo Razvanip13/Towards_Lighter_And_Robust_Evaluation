@@ -76,8 +76,6 @@ for dataset in datasets:
 
 df = pd.DataFrame(data_collector)
 
-# print("Dataset content: ")
-# print(df['dataset'].value_counts())
 
 df['answer'] = df['answer'].fillna('No answer')
 
