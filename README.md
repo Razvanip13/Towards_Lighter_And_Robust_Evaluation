@@ -1,5 +1,5 @@
 # Towards_Lighter_And_Robust_Evaluation
-The corrected dataset for ECIR 2025
+The corrected dataset for Quantify Uncertainty and Hallucination in Foundation Models: The Next Frontier in Reliable AI": Workshop on ICLR 2025
 
 This is the script for the reproduction of the dataset used for evaluating correctness
 
